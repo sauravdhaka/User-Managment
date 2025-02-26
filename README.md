@@ -123,7 +123,7 @@ $ npm run test:cov
   - Calls `authService.login(loginDto)`.
   - **Authentication:** No guard applied.
 
-![Login](./images/authlogin.png)
+
 
 ### User Controller (`src/users/users.controller.ts`)
 
@@ -132,15 +132,13 @@ $ npm run test:cov
   - Returns a list of users.
   - **Authentication:** Requires JWT (`@UseGuards(JwtAuthGuard)`).
 
-  ![Fetch User With Token](./images/fetchuserwithtoke.png)
-  ![Fetch User Without Token](./images/userfetchwithouttoken.png)
 
 - **POST** `/users`
   - Accepts `CreateUserDto` payload.
   - Calls `userService.create(createUserDto)`.
   - **Authentication:** No guard applied.
 
-![Create User](./images/createUser.png)
+
 
 **Payload:**
 
